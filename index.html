@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Graduate</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+	<h2 id="clock"><h2>
+	<form class="hidden" id="logInForm">
+		<input
+			required
+			id="logInInput"
+			maxlength="15"
+			placeholder="Type your name!"
+		/>
+		<input type="submit" value="Log In" />
+	</form>
+	<h1 class="hidden" id="greeting"></h1>
+
+	<form id="toDoInputForm">
+		<input
+			required
+			id="toDoNew"
+			maxlength="30"
+			placeholder="Type your new to do!"
+		/>
+		<input type="submit" value="Add" />
+	</form>
+	<ul id="toDoList">
+	</ul>
+	<div id="locationWeather">
+		<h3></h3>
+		<h4></h4>
+	</div>
+	<script src="src/clock.js"></script>
+	<script src="src/logIn.js"></script>
+	<script src="src/toDo.js"></script>
+	<script src="src/background.js"></script>
+	<script src="src/locationWeather.js"></script>
+</body>
+
+</html>
